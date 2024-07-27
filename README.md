@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@deno/mod.js';
+import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@v0.1.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@deno/mod.js';
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@v0.1.1-deno/mod.js';
 ```
 
 #### isNonPositiveFinite( value )
@@ -126,7 +126,7 @@ bool = isNonPositiveFinite.isObject( new Number( -3.0 ) );
 
 ```javascript
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
-import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@deno/mod.js';
+import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@v0.1.1-deno/mod.js';
 var NINF = require('@stdlib/constants-float64-ninf');
 
 var bool = isNonPositiveFinite( -5.0 );
