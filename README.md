@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-nonpositive-finite/tags). For example,
+
+```javascript
 import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@v0.1.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@v0.1.1-deno/mod.js';
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@deno/mod.js';
 ```
 
 #### isNonPositiveFinite( value )
@@ -126,7 +131,7 @@ bool = isNonPositiveFinite.isObject( new Number( -3.0 ) );
 
 ```javascript
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
-import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@v0.1.1-deno/mod.js';
+import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@deno/mod.js';
 var NINF = require('@stdlib/constants-float64-ninf');
 
 var bool = isNonPositiveFinite( -5.0 );
