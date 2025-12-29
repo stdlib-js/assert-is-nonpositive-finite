@@ -2,6 +2,43 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-12-29)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`f9651e6`](https://github.com/stdlib-js/stdlib/commit/f9651e6411b4ebd3c95dcc6b46c02e6d5be009fa) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
+-   [`fb7cbd3`](https://github.com/stdlib-js/stdlib/commit/fb7cbd31c78b05a7008a06e232fded012bab9c52) - **docs:** update related packages sections [(#5002)](https://github.com/stdlib-js/stdlib/pull/5002) _(by stdlib-bot)_
+-   [`e18ac04`](https://github.com/stdlib-js/stdlib/commit/e18ac04fcc119deda36c9da4a996a3b75b1e6d9f) - **style:** add missing spaces _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2024-07-27)
