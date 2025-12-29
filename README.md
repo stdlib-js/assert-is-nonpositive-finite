@@ -35,38 +35,32 @@ limitations under the License.
 
 > Test if a value is a number having a nonpositive finite value.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-nonpositive-finite
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isNonPositiveFinite = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isNonPositiveFinite = require( 'path/to/vendor/umd/assert-is-nonpositive-finite/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isNonPositiveFinite;
-})();
-</script>
+var isNonPositiveFinite = require( '@stdlib/assert-is-nonpositive-finite' );
 ```
 
 #### isNonPositiveFinite( value )
@@ -77,7 +71,7 @@ Tests if a `value` is a `number` having a nonpositive finite value.
 
 ```javascript
 var Number = require( '@stdlib/number-ctor' );
-var NINF = require('@stdlib/constants-float64-ninf');
+var NINF = require( '@stdlib/constants-float64-ninf' );
 
 var bool = isNonPositiveFinite( -5.0 );
 // returns true
@@ -142,15 +136,10 @@ bool = isNonPositiveFinite.isObject( new Number( -3.0 ) );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
-var NINF = require('@stdlib/constants-float64-ninf');
+```javascript
+var Number = require( '@stdlib/number-ctor' );
+var isNonPositiveFinite = require( '@stdlib/assert-is-nonpositive-finite' );
+var NINF = require( '@stdlib/constants-float64-ninf' );
 
 var bool = isNonPositiveFinite( -5.0 );
 // returns true
@@ -175,11 +164,6 @@ bool = isNonPositiveFinite( '-5' );
 
 bool = isNonPositiveFinite( null );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -189,6 +173,13 @@ bool = isNonPositiveFinite( null );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-finite`][@stdlib/assert/is-finite]</span><span class="delimiter">: </span><span class="description">test if a value is a finite number.</span>
+-   <span class="package-name">[`@stdlib/assert-is-nonpositive-number`][@stdlib/assert/is-nonpositive-number]</span><span class="delimiter">: </span><span class="description">test if a value is a number having a nonpositive value.</span>
 
 </section>
 
@@ -220,7 +211,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -246,8 +237,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -265,6 +256,14 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/assert-is-nonpositive-finite/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-nonpositive-finite/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-finite]: https://github.com/stdlib-js/assert-is-finite
+
+[@stdlib/assert/is-nonpositive-number]: https://github.com/stdlib-js/assert-is-nonpositive-number
+
+<!-- </related-links> -->
 
 </section>
 
