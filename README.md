@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-nonpositive-finite/tags). For example,
+
+```javascript
 import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@v0.1.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@v0.1.2-esm/index.mjs';
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@esm/index.mjs';
 ```
 
 #### isNonPositiveFinite( value )
@@ -131,7 +136,7 @@ bool = isNonPositiveFinite.isObject( new Number( -3.0 ) );
 <script type="module">
 
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@v0.1.2-esm/index.mjs';
+import isNonPositiveFinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonpositive-finite@esm/index.mjs';
 import NINF from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-ninf@esm/index.mjs';
 
 var bool = isNonPositiveFinite( -5.0 );
